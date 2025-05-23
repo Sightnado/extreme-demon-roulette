@@ -197,6 +197,9 @@ export default defineComponent({
                 demons.push(...(await fetchDemons(150)));
                 // is this even worth it
                 demons.push(...(await fetchDemons(250)).filter(demon => demon.levelID));
+                demons.push(...(await fetchDemons(350)).filter(demon => demon.levelID));
+                demons.push(...(await fetchDemons(450)).filter(demon => demon.levelID));
+                demons.push(...(await fetchDemons(550)).filter(demon => demon.levelID));
             }
             if (useOldList.value) {
                 demons = veryOldDemons.slice();
